@@ -1,0 +1,55 @@
+/* Default styles */
+
+:root {
+  --main-font: 'Lato', sans-serif;
+  --title-font: 'Montserrat', sans-serif;
+  --medium-font-size: 18px;
+  --accent-color: #ff4c3d;
+  --white: #fff;
+  --black: #1a1a1a;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font);
+}
+
+/* Navbar styles */
+
+.navbar__logo {
+  max-height: 40px;
+}
+
+.navbar__link {
+  font-size: var(--medium-font-size);
+  color: var(--black);
+  margin: 0 10px;
+  padding: 15px 30px;
+}
+
+.navbar__link:focus,
+.navbar__link:active,
+.navbar__link:hover {
+  color: var(--accent-color);
+}
+
+.navbar__link--active {
+  background-color: var(--accent-color);
+  color: var(--white);
+  border-radius: 75px;
+}
+
+.navbar__link--active:focus,
+.navbar__link--active:active,
+.navbar__link--active:hover {
+  color: var(--white);
+  text-decoration: none;
+}

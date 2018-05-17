@@ -20,6 +20,10 @@ Submit a pull request to this repo with your all your files in this folder `WebS
 * Write code with Emmet
 * Use Javascript and jQuery based modules with zero configuration at all (Writting any Javascript is required, just style those components)
 
+### Hints
+- To transofrm an element, look for CSS property: `transform` and `rotate` and the copy contents or replace with your own.
+- Don't use real assets, just respect size and aspect-ratio.
+
 ### Nice to haves
 
 * Change behaviour of the carousel (Requires Javascript and jQuery knowledge).

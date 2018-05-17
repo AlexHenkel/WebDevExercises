@@ -1,12 +1,22 @@
 /* Default styles */
 
 :root {
+  /* Variables */
   --main-font: 'Lato', sans-serif;
   --title-font: 'Montserrat', sans-serif;
-  --medium-font-size: 18px;
+  --regular-font-size: 16px;
+  --medium-font-size: 20px;
+  --gigant-font-size: 60px;
   --accent-color: #ff4c3d;
   --white: #fff;
-  --black: #1a1a1a;
+  --black: #494c4f;
+  --black-a: #494c4faa;
+  /* Mixins */
+  --button: {
+    background-color: var(--button-bg, var(--accent-color));
+    color: var(--button-bg, var(--white));
+    border-radius: 75px;
+  }
 }
 
 body {
@@ -20,6 +30,61 @@ h4,
 h5,
 h6 {
   font-family: var(--title-font);
+}
+
+/* Typography */
+
+.h1--gigant {
+  font-size: var(--gigant-font-size);
+}
+
+.h3 {
+  color: var(--black);
+  font-size: var(--medium-font-size);
+}
+
+.h3--underline {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.h3--underline::after {
+  content: '';
+  width: 120%;
+  height: 3px;
+  position: absolute;
+  left: -10%;
+  top: calc(100% + 10px);
+  background: var(--black-a);
+}
+
+.p {
+  font-size: var(--regular-font-size);
+}
+
+/* General */
+
+.container--small {
+  width: 600px;
+}
+
+.button-like {
+  background-color: var(--button-bg, var(--accent-color));
+  color: var(--button-bg, var(--white));
+  border-radius: 75px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: var(--circle-dim, 50px);
+  height: var(--circle-dim, 50px);
+}
+
+.line {
+  width: 3px;
+  height: 150px;
+  background-color: var(--line-bg, var(--accent-color));
+  margin: var(--line-height, 40px) auto;
 }
 
 /* Navbar styles */
